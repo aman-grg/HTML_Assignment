@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}  
+body {
+    margin: 0;
+}
+.para-center {
+    text-align: center;
+    font-family: Helvetica;
+}
+.para-left {
+    text-align: left;
+    font-family: Helvetica;
+    margin: 15px;
+    font-size: small;
+}
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+}
+.flex-container1 > div {
+    width: 19%;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    font-family: Helvetica;
+}
+.c1 {
+    background-color: rgb(50, 196, 233);
+}
+.c2 {
+    background-color: rgb(253, 172, 78);
+}
+.c3 {
+    background-color: rgb(255, 73, 103);
+}
+.c4 {
+    background-color: rgb(100, 243, 87);
+}
+.flex-container1 i {
+    font-size: 70px;
+    padding: 60px 50px 30px 50px;
+}
+.flex-container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100px;
+}
+.flex-container2 > div {
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    font-family: Helvetica;
+    background-color: rgb(217, 228, 215);
+    flex: 0 0 25%;
+}
+.hover:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 2px rgb(80, 77, 77);
+}
+.percent {
+    font-size: x-large;
+    color: rgb(147, 243, 83);
+    font-weight: bold;
+}
+.name {
+    font-weight: 600;
+}
+.row {
+    position: relative;
+    padding: 10px;
+}
+.row.r1 {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(78, 78, 214);
+    padding: 1px;
+    color: white;
+    text-align: center;
+}
+.icon i {
+    font-size: 20px;
+    padding: 1px 15px;
+}
+.icon i:first-child{
+    padding: 1px 15px 1px 400px;
+}
+.icon i:hover {
+    cursor: pointer;
+    color: rgb(207, 201, 201);
+} 
+.row.r2 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(28, 30, 36);
+}
+.row.r3 {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(17, 16, 22);
+    text-align: center;
+}
+.column:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+table {
+    margin: auto;
+    width: 60%;
+}
+th {
+    text-align: left;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 40px 5px 15px 0;
+    border-style: hidden hidden solid hidden;
+    border-color: rgb(50, 58, 71);
+    border-width: 1px;
+}
+td {
+    text-align: left;
+    color: white;
+    padding: 0 0 10px 0;
+}
+td i {
+    padding: 0 10px 10px 0;
+}
+td:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.grey {
+    padding: 0;
+    color: grey;
+}
+.white {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .c1, .c2, .c3, .c4, .flex-container1, .flex-container2 {
+      width: 100%;
+    }
+}

@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}               
+.headings {
+    color:white;
+    text-align: center;
+    font-family: Helvetica;
+}
+.pass {
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    font-family: Helvetica;
+}
+.pass:hover {
+    text-decoration: none;
+    color: black;
+    font-style: strong;
+    cursor: pointer;
+}
+input[type=text], input[type=password] {
+    width: 400%;
+      border: 1px solid #ccc;
+      resize: vertical;            
+      padding: 12px 20px 12px 40px;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(87, 182, 238);
+    color: white;
+    padding: 12px 20px;
+    border: none;            
+    cursor: pointer;            
+}
+input[type=submit]:hover {
+    background-color: rgb(77, 167, 219);
+}
+.container {
+    background-color: rgb(25, 26, 114);
+      width: 500px;
+      height: 340px;
+      text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 2px rgb(24, 40, 110);            
+}
+.container1 {
+    background-color: #3c6ae9;
+}
+.column {
+      width: 25%;
+      margin-top: 10px;
+    text-align: center;
+}
+.column i {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+}
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+}
+.container2{
+    width:100%;
+    background-color: black;
+}
+ul {
+      list-style-type: none;
+    display: table;
+    margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+    font-size: 15px;
+}
+li {
+      float: left;            
+    padding: 5px;
+    width: 110px;
+}
+li i {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    padding: 15px 0 15px 1px;
+    color: white;
+}
+li a {
+    display: block;
+      color: white;
+     text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+}
+li a:hover:not(.active) {
+      background-color: rgb(65, 58, 58);
+}
+.active {
+      border-style:hidden hidden solid hidden;
+    border-color:red;
+}
+@media screen and (max-width: 600px) {
+      .column, input[type=submit], input[type=text], input[type=password], li {
+       width: 100%;
+    margin-top: 0;
+      }
+}
